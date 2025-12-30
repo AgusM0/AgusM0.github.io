@@ -585,6 +585,12 @@ a:hover
     opacity: 1;
 }
 
+#Destacados{
+    font-size: 5rem;
+    position: relative;
+    top: 6.5rem;
+}
+
 /** 7. FOOTER
 *******************************************************************/
 
