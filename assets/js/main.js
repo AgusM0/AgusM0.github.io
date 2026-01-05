@@ -22,6 +22,19 @@ jQuery(window).on('load', function() {
 
 });
 
+// It stops the browser from restauring the scroll position
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+// It secures that the scroll should be in the top 
+window.scrollTo(0, 0);
+
+// Forcing this before the web close or restart 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+
 
 jQuery(document).ready(function($) {
 	"use strict";
