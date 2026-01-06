@@ -512,30 +512,28 @@ a:hover
     width: 100%;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    /*grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
     /* FILAS: Que midan lo que necesite el contenido (mínimo 400px) */
     grid-template-rows: auto; 
     gap: 80px;
-
-
-    
- 
 }
 
 .portfolio .item
 {
-    
+    align-self: start;
+    height: fit-content;
     background-color: rgba(27, 27, 27, 0.476);
     border: 2px solid white; 
     border-radius: 20px;  
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 500px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    height: 2rem;
     padding: 2rem;
-    margin-left: 100px;
-    margin-right: 100px;
-    
+    height: fit-content;
 }
 
 .project-image{
@@ -546,16 +544,16 @@ a:hover
     font-size: 20px;
     text-align: left;
     width: 100%;
-    padding-top: 1rem;
+    padding-top: 5%;
 }
 .project-description{
     
     text-align: left;
     width: 100%;
-    padding-top: 1rem;
+    padding-top: 4%;
 }
 .button-more{
-    margin-top: 4rem;
+    margin-top: 6%;
     margin-bottom: 1.5rem;
     background-color: rgba(29, 11, 104, 100);
     border-radius: 20px;
